@@ -16,13 +16,13 @@ z = 1j
 
 print(type(x), type(y), type(z))
 
-#day = "Beautiful"
-#print(day[1])
-#print(day[0:5])
-#print(day[-3])
-#print(day[-3:])
-#rint(day[-5:3])
-#print(day[-5:-3])
+day = "Beautiful"
+print(day[1])
+print(day[0:5])
+print(day[-3])
+print(day[-3:])
+print(day[-5:3])
+print(day[-5:-3])
 
 #day == "Beautiful"
 #print("Today is " + day)
