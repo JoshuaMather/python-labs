@@ -74,5 +74,21 @@ while (gridUpdated):
                     print (" was found in area")
                 col += area
             row += area
+    for row in range(0, size):
+        if 0 in sudokuGrid[row]:
+            for col in range(0, size):
+                if sudokuGrid[row][col] == 0:
+                    currentRowValues = sudokuGrid[row]
+                    currentColValues = [item[col] for item in sudokuGrid]
+                    validChoices = []
+                    for n in range(1,size+1):
+                        if n not in currentRowValues and n not in currentColValues:
+                            validChoices.append([row, col, n])
+                    if len(validChoices) == 1:
+                        x = validChoices[0][0]
+                        y = validChoices[0][1]
+                        n = validChoices[0][2]
+                        sudokuGrid[x][y] = n
+                        gridUpdated = True
 for row in range(size):
     print (sudokuGrid[row])
