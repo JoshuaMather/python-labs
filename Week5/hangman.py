@@ -1,8 +1,16 @@
+import random
+
+with open("englishWords.txt", "r") as file:
+    wordlist = file.readline
+wordlist = [line.rstrip('\n') for line in open("englishWords.txt")]
+
 win = False
-word = "yellow"
+word = random.choice(wordlist)
 count = 0
 guesses = ""
-answer = "______"
+answer = ""
+for a in range(0, len(word)):
+    answer += "_"
 
 while count < 10 and win == False:
     count +=1
