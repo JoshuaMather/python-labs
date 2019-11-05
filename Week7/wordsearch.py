@@ -91,7 +91,7 @@ def CheckWordWillFit(word, row, col, direction):
         else:
             print("Word will not fit")
             return False
-        return True
+    return True
 
 def GridRandomFill():
     alphabet = "aabcdeeefghijklmnoopqrstuvwxyz"
